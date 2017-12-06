@@ -1,6 +1,7 @@
 package com.example.navadroid.androidonclickevent;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -21,7 +22,20 @@ public class Option1Activity extends AppCompatActivity {
         setContentView(R.layout.activity_option1);
         bindView();
     }
-
+    public void Next (View v){
+        if( v.getId() == R.id.btn_next1){
+            Intent next=new Intent(Option1Activity.this,Option2Activity.class);
+            startActivity(next);
+            finish();
+        }
+    }
+    public void Back (View v){
+        if( v.getId() == R.id.btn_back1){
+            Intent back =new Intent(Option1Activity.this,Option0Activity.class);
+            startActivity(back);
+            finish();
+        }
+    }
     // To bind views to this activity
     private void bindView(){
         etInput = (EditText) findViewById(R.id.et_input_1);

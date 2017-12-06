@@ -34,14 +34,39 @@
         android:text="@string/process"
         android:layout_marginBottom="@dimen/small_spacing" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+    <Button
+        android:id="@+id/btn_back0"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Back"
+        android:onClick="Back"
+
+        />
+
+        <Button
+            android:id="@+id/btn_next0"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Next"
+            android:onClick="Next"
+            />
+    </LinearLayout>
+
     <TextView
         android:id="@+id/tv_body_0"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:text="@string/tv_output_init"
-        android:textAppearance="@style/text_title"
-        android:background="@color/colorAccent"/>
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:text="@string/tv_output_init"
+    android:textAppearance="@style/text_title"
+    android:background="@color/colorAccent"/>
 
-</LinearLayout>
+    </LinearLayout>
